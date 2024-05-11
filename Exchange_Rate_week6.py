@@ -77,3 +77,48 @@ plt.show()
 # exchange rates. The plot is customized with a title and axis labels
 
 
+# What is the distribution of exchange rates for the Chinese Yuan (CNY) against the Euro (EUR)?
+# visualize it.
+# Plotting a histogram of the exchange rates for CNY
+
+sns.histplot(data=frank2, x="CNY", kde=True, edgecolor='black', color = "green")
+plt.xlabel("Exchange Rate(CNY)")  
+plt.ylabel("Frequency")                 
+plt.title("Distribution Of The Exchange Rates For CNY")
+
+# Displaying the plot
+plt.show
+
+# This code segment creates a histogram to visualize the distribution
+# of exchange rates for CNY (Chinese Yuan). The data is retrieved from the DataFrame 
+# frank2, with the exchange rates represented by the column 'CNY'. The histogram is customized
+# with KDE (Kernel Density Estimation) enabled, edge color set to black, and histogram bars 
+# colored green. Axis labels and a title are added for clarity, and the plot is displayed using plt.show().
+
+# 3. Between the Great British Pound (GBP) and the Japanese Yen (JPY) determine which country's currency is more volatile
+# A Bar chart comparing the volatility of the selected currencies.
+
+
+# Calculate volatility (standard deviation) for GBP to JPY exchange rate & vice-versa
+volt_gbp_jpy = frank2['GBP'].std()
+volt_jpy_gbp = frank2['JPY'].std()
+
+# Creating a bar plot to compare volatility
+sns.barplot(x=['GBP to JPY', 'JPY to GBP'], y=[volt_gbp_jpy, volt_jpy_gbp])
+plt.xlabel("Exchange Rates")                                                             
+plt.ylabel("Volatility")                                          
+plt.title("More Volatile Currency")  
+
+# Adding labels to the bars
+for i in range(len(['GBP to JPY', 'JPY to GBP'])):
+    plt.text(i, [volt_gbp_jpy, volt_jpy_gbp][i], f'{[volt_gbp_jpy, volt_jpy_gbp][i]:.2f}', ha='center', va='bottom')
+    
+# Displaying the plot
+plt.show()
+
+# This code creates a bar plot using seaborn to compare the volatility
+# (standard deviation) between GBP to JPY and JPY to GBP exchange rates from 
+# the DataFrame frank2. Axis labels and a title are added for clarity.
+# Additionally, labels are added to the bars to display the volatility values. The plot is displayed using plt.show().
+
+
