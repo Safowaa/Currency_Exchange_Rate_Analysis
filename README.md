@@ -14,10 +14,10 @@ Welcome to the **Currency Exchange Rate Analysis** repository! This project expl
 ![Exchange Rate Trends](https://github.com/Safowaa/Currency_Exchange_Rate_Analysis/blob/015f17cc88eefd04f7c76167adb77d3842a5e270/Project_Pictures/EUR_USD.png "EUR to USD Trend")
 
 ### Volatility Comparison
-![Volatility Comparison](URL_TO_IMAGE_HERE "GBP vs JPY Volatility")
+![Volatility Comparison](https://github.com/Safowaa/Currency_Exchange_Rate_Analysis/blob/92322bccf64f23f73b20482ddc0f68e62df105fa/Project_Pictures/Volatility.png "GBP vs JPY Volatility")
 
 ### Currency Correlation
-![Currency Correlation](URL_TO_IMAGE_HERE "CAD and USD Correlation")
+![Currency Correlation](https://github.com/Safowaa/Currency_Exchange_Rate_Analysis/blob/92322bccf64f23f73b20482ddc0f68e62df105fa/Project_Pictures/Correlation.png "CAD and USD Correlation")
 
 ## Getting Started
 
