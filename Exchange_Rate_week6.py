@@ -121,4 +121,26 @@ plt.show()
 # the DataFrame frank2. Axis labels and a title are added for clarity.
 # Additionally, labels are added to the bars to display the volatility values. The plot is displayed using plt.show().
 
+# 4. Is there a correlation between the exchange rates of the Canadian Dollar (CAD) and the American Dollar (USD) ??
+# Visualize using a Scatter plot.
+# Calculating the correlation coefficient between CAD and USD
+cor_coefficient = frank2['CAD'].corr(frank2['USD'])
 
+# Creating a scatter plot to visualize the relationship between CAD and USD
+sns.scatterplot(data=frank2, x="CAD", y="USD", alpha=0.6)  # Scatter plot with transparency set to 0.6
+
+# Adding kernel density estimation (KDE) to the plot
+sns.kdeplot(data=frank2, x="CAD", y="USD", color="green", levels=5, linewidths=1)  # KDE plot with green color, 5 contour levels, and linewidth of 1
+
+# Adding labels and title to the plot
+plt.xlabel("CAD") 
+plt.ylabel("USD")    
+plt.title("Correlation between CAD and USD")  # Title
+
+# Displaying the plot
+plt.show()
+
+# This code segment calculates the correlation coefficient between the Canadian Dollar (CAD) and the US Dollar (USD)
+# exchange rates from the DataFrame frank2. It then creates a scatter plot to visualize the relationship between CAD
+# and USD exchange rates, with transparency set to 0.6. Additionally, kernel density estimation (KDE) is added to the
+# plot to show the density of points. Axis labels and a title are included for clarity, and the plot is displayed using plt.show().
